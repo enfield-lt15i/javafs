@@ -1,0 +1,13 @@
+
+public class StringApp {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Hello World"); //String (문자열)
+		System.out.println('H'); //Character (문자)
+		
+		System.out.println('H'+'e'+'l'+'l'+'o'+' '+'W'+'o'+'r'+'l'+'d');
+
+	}
+
+}

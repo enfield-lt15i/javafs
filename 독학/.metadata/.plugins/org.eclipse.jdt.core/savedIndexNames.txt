@@ -1,0 +1,6 @@
+INDEX VERSION 1.132+D:\독학\.metadata\.plugins\org.eclipse.jdt.core
+1696264553.index
+3572749528.index
+2380175872.index
+3998055702.index
+1865797976.index
