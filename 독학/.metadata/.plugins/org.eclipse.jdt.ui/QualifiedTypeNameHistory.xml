@@ -8,4 +8,5 @@
     <fullyQualifiedTypeName name="org.opentutorials.iot.Speaker"/>
     <fullyQualifiedTypeName name="org.opentutorials.iot.DimmingLights"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
