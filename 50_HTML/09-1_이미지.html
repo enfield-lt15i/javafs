@@ -10,6 +10,38 @@
 
 <body>
     <h1>이미지</h1>
+    <!-- img src="!경로설정!" alt="" (※권장되지 않음. CSS에서 작업함.) width="너비" height="높이" -->
+
+    <!-- 
+        //이미지에 캡션 달기
+        <figure>
+            <img src="" alt="">
+            <figcaption> 이미지에 대한 설명 </figcaption>
+        </figure>
+
+
+
+        //이미지 맵
+        //하나의 이미지에 하나 이상의 링크 적용
+        <img src="" alt="" usemap="#map1">
+        <map name="map1">
+            <area shape="rect" coords="x1, y1, x2, y2" 시작점과 대각선 맞은편 끝점 alt="" href="">   //coordinate 좌표
+            <area shape="circle" coords="x1, y1, R" 중심점과 반지름 alt="" href="">
+            <area shape="poly" coords="x1, y1, x2, y2, ..." alt="" href="">
+        </map>
+
+        <img src="" alt="" usemap="#map2">
+        <map name="map2">
+            <area shape="rect" coords="x1, y1, x2, y2" 시작점과 대각선 맞은편 끝점 alt="">
+            <area shape="circle" coords="x1, y1, R" 중심점과 반지름 alt="">
+            <area shape="poly" coords="x1, y1, x2, y2, ..." alt="">
+        </map>
+
+        1. img 태그의 usemap 속성 값은 map 태그의 name 속성과 같아야 한다. 
+        2. area 태그에 alt 속성을 반드시 기록한다. 
+        3. 예) usemap="#map", name="map"   
+        4. 좌표 찾기: https://www.image-map.net/ -->
+
     <!-- 
         사용 이미지
         1. 이탈리아 풀리아주의 건축물인 트룰리: assets/pic_trulli.jpg
@@ -19,13 +51,18 @@
     -->
     <h2>캡션 달기</h2>
     <!-- figure와 figcaption을 사용하여 이미지에 캡션을 달아 보세요. -->
+    <figure>
+        <img src="/50_HTML/assets/pic_trulli.jpg" alt="트룰리">
+        <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
+    </figure>
+
+    <img src="/workplace.jpg" alt="사무실" width="400" height="379">
+    <!-- width, height 한 쪽만 쓰면 비율에 맞게 변함-->
 
     <hr>
     <h2>이미지 맵</h2>
-    <!-- img 태그의 usemap 속성 값은 map 태그의 name 속성과 같아야 한다. -->
-    <!-- area 태그에 alt 속성을 반드시 기록한다. -->
-    <!-- 예) usemap="#map", name="map" -->
-    <!-- 좌표 찾기: https://www.image-map.net/ -->
+    <a href="https://www.yna.co.kr/" target="_blank"><img src="/50_HTML/assets/422.png" alt="연합뉴스"></a>
+
 
     <!-- img 태그의 usemap 속성을 사용하여 하나의 이미지에 3개의 링크를 적용해 보세요. -->
     <!-- 
@@ -36,9 +73,11 @@
      -->
     <p>컴퓨터, 핸드폰, 커피 잔을 클릭하여 새 페이지로 이동하고 주제에 대해 자세히 읽어보십시오.</p>
 
-    <img src="" alt="" usemap="">
-    <map name="">
-        <area shape="" coords="" alt="" href="" target="">
+    <img src="/workplace.jpg" alt="사무실" usemap="#map1">
+    <map name="map1">
+        <area target="_blank" alt="커피" title="커피" href="https://www.mega-mgccoffee.com/" coords="337,301,47" shape="circle">
+        <area target="_blank" alt="IBM 호환 기종" title="IBM 호환 기종" href="https://www.ibm.com/kr-ko" coords="32,42,43,188,31,346,272,348,265,188,275,42" shape="poly">
+        <area target="_blank" alt="아이폰" title="아이폰" href="https://www.apple.com/kr/" coords="290,173,333,247" shape="rect">
     </map>
 
 </body>
