@@ -26,20 +26,30 @@
         3. video/ogg
 
         비디오 속성:
-        1. autoplay: 자동 실행
+        1. autoplay (+ muted): 자동 재생 (+음소거)
         2. muted: 음소거
-        3. loop: 무한 반복
+        3. loop (autoplay + muted): 무한 반복 (자동 재생 + 음소거)
         4. controls: 컨트롤
+
+        <video>
+        <audio>
+            <source>
+
      -->
 
     <!-- video와 source 태그로 비디오를 삽입해 보세요. -->
-    <video>
+    <!-- autoplay는 muted와 함께 지정해야 작동합니다. -->
+    <video autoplay loop muted>
+        <source src="/50_HTML/assets/video/mov_bbb.mp4" type="video/mp4">
+        <source src="/50_HTML/assets/video/mov_bbb.webm" type="video/webm">
+        <source src="/50_HTML/assets/video/mov_bbb.ogv" type="video/ogg">
+        지금 사용하시는 브라우저는 HTML 비디오를 지원하지 않습니다.
         Your browser does not support HTML video.
     </video>
 
-
     <h2>유튜브 비디오</h2>
     <!-- 유튜브 비디오를 iframe 태그로 삽입해 보세요. -->
+    <iframe width="930" height="523" src="https://www.youtube.com/embed/cHBqwj0Ed_I" title="copyright free nature videos | No copyright video nature | Download copyright free nature video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
     <!-- 
@@ -60,15 +70,22 @@
      -->
 
     <h2>오디오</h2>
-     <!-- 1번 오디오 소스를 이용하여 audio와 source 태그로 오디오를 삽입해 보세요. -->
-    <audio>
-        Your browser does not support the audio element.
-    </audio>
+    <!-- 1번 오디오 소스를 이용하여 audio와 source 태그로 오디오를 삽입해 보세요. -->
+    <audio controls>
+        <source src="/50_HTML/assets/audio/horse.mp3" type="audio/mpeg">
+        <source src="/50_HTML/assets/audio/horse.ogv" type="audio/ogg">
+        <source src="/50_HTML/assets/audio/horse.wav" type="audio/wav">
+     </audio>
+        
+        
+            지금 사용하시는 브라우저는 오디오 요소를 지원하지 않습니다.
+            Your browser does not support the audio element.
 
-    <!-- 2번 오디오 소스를 이용하여 배경 음악을 삽입해 보세요. -->
-    <audio autoplay>
-        Your browser does not support the audio element.
-    </audio>
+        <!-- 2번 오디오 소스를 이용하여 배경 음악을 삽입해 보세요. -->
+        <audio autoplay>
+            <source src="/50_HTML/assets/audio/Good_Morning!_Reed_Mathis.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
 </body>
 
 </html>

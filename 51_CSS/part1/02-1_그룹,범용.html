@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+            요소(element, type, 태그) 선택자 
+            HTML 태그 이름으로 지정
+        */
+        /* 
+            CSS의 속성은 상속 개념이 있다.
+        */
+        /* html {border: 5px solid coral;}
+        body {border: 3px solid coral;}
+        h1 {border: 3px solid coral;}
+        h2 {border: 3px solid coral;}
+        ul {border: 2px solid coral;}
+        li {border: 1px solid coral;}
+
+        html {color: red;}
+        body {color: red;}
+        h1 {color: red;}
+        h2 {color: red;}
+        ul {color: red;}
+        li {color: red;} */
+
+        /* 
+            그룹(Grouping) 선택자:
+            선택자1, 선택자2, ...
+        */
+        html, body, h1, ul, li {border: 2px solid brown} /* 가장 좋은 방식 */
+
+        /* 범용(Universal, 전체) 선택자 */
+        * {margin: 0; padding: 0; box-sizing: border-box;} /* 이렇게는 쓸모 있음 ㅎㅅㅎ */
+        * {background-color: darkcyan;} /* 안 쓰는 게 좋음 (느려짐) */
+        
+
+    </style>
+</head>
+<body>
+    <h1>선택자</h1>
+    <ul>
+        <li>그룹 선택자</li>
+        <li>범용 선택자</li>
+    </ul>
+</body>
+</html>

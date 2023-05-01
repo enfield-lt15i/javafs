@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+            상태를 나타내는 의사(Pseudo, 가상, 유사) 클래스
+
+            a:link - 방문전: 파란색
+            a:visited - 방문후: 보라색
+            선택자:hover - 올린경우: 파란색
+            선택자:active - 눌린경우: 빨간색
+
+            :link -> :visited -> :hover -> :active 순으로 기록해야한다.
+        */
+
+        /* a:link {color: blue;}
+        a:visited {color:red;}
+        a:hover {color: chartreuse;}
+        a:active {color: yellow;} */
+
+        a {color: #999; text-decoration: none;}
+        a:hover {color: red; text-decoration: underline;}
+
+        p:first-child:hover{color: red;}
+
+    </style>
+</head>
+<body>
+    <!-- 다중커서: ctrl+alt+방향키 위아래 -->
+    <h1>의사 클래스 선택자</h1>
+    <a href="#">링크1</a>
+    <a href="#">링크2</a>
+    <a href="http://www.naver.com"><img src="../assets/naver.png" alt="네이버"></a>
+    <a href="http://www.google.com"><img src="../assets/google.png" alt="구글"></a>
+
+    <p>마우스 올려 봐! 나는 빨간색이다</p>
+    <p>마우스 올려 봐! 나는 주황색이돠</p>
+    <p>마우스 올려 봐! 나는 파란색이지롱</p>
+</body>
+</html>

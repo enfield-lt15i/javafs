@@ -1,0 +1,40 @@
+ @charset "utf-8";
+
+ /* Default/Reset */
+ * {
+     margin: 0px;
+     padding: 0px;
+ }
+
+ /* Common */
+ h2 {
+     background-color: cadetblue;
+     height: 145px;
+ }
+
+ .pf, .container {
+    background-color: blueviolet;
+    width: 960px;
+    margin: 0 auto;
+}
+
+ /* Header */
+ nav {
+     background-color: azure;
+     height: 54px;
+ }
+
+ #home {
+     background-color: aqua;
+     height: 1053px;
+ }
+
+ section>p {
+     background-color: blue;
+     height: 54px
+ }
+
+ .number {
+    height: 135px;
+    background-color: chartreuse;
+ }
