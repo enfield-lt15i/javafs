@@ -1,0 +1,86 @@
+ @charset "utf-8";
+
+ /* reset */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ html {
+    font-size: 10px;
+ }
+
+ body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1.8;
+ }
+
+ img {
+    width: 100%;
+ }
+
+ /* a태그와 버튼 태그의 글자색은 body 태그의 글자 색을 상속받지 않는다. */
+ a {
+    color: black;
+    text-decoration: none;
+ }
+
+ /* header */
+ header {
+    width: 100%;
+    background-color: rgb(80,80,80);
+    position: fixed;
+    z-index: 99;
+ }
+
+ nav ul {
+    height: 54px;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+ }
+
+ header li {
+    margin: 0 10px;
+ }
+
+ nav a {
+    color: white;
+    padding: 10px 10px;
+
+ }
+
+ nav a:hover {
+    background-color: #ccc;
+ }
+
+ /* section 1 */
+ #home {
+    position: relative;
+    background: url(../images/mine/star.png) no-repeat 50% 50%/35% fixed, url(../images/mine/black.jpg) no-repeat 50% 50%/cover fixed;
+    height: 1440px;
+ }
+
+ #home h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    padding: 8px 24px;
+ }
+
+ #home a {
+    color: white;
+ }
+
+ /* section 2 */
+ /* section 3 */
+ /* section 4 */
+ /* footer */

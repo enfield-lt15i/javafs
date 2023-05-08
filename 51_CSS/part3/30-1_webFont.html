@@ -20,21 +20,47 @@
             CDN(Content Delivery Network, 콘텐츠 전송 네트워크)은 지리적으로 분산된 여러 개의 서버를 통해 웹 콘텐츠를 사용자와 가까운 곳에서 전송함으로써 전송 속도를 높입니다.
         */
 
+        /*  구글 https://fonts.google.com
+            눈누, ... */
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
+
         /* .ff1에 구글 Noto Sans KR 폰트를 CDN 방식으로 지정해 보세요. */
 
+        .ff1 {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
 
         /* .ff2에 서울 SeoulNamsanL 폰트를 @font-face 규칙을 사용하여 지정해 보세요. */
+        @font-face {
+            font-family: aladin;
+            src: url(../assets/font/aladdin.ttf);
+        }
 
+        @font-face {
+            font-family: seoul;
+            src: url(../assets/font/SeoulNamsanL.ttf);
+        }
 
+        p {
+            font-family: seoul;
+            font-size: 50px;
+        }
+
+        .ff2 {
+            font-family: aladin;
+            font-size: 100px
+        }
     </style>
 </head>
 
 <body>
     <h1>웹 폰트</h1>
-    <p>구글 웹 폰트(Google Web Font) 지정 안함.</p>
+    <p>서울 남산 폰트(Google Web Font) 지정함.</p>
     <p class="ff1">구글 웹 폰트(Google Web Font) 지정 했음.</p>
-    <p>서울 서체(Seoul Font) 지정 안함.</p>
-    <p class="ff2">서울 서체(Seoul Font) 지정 했음.</p>
+    <p>여기도 서울 남산 폰트(Seoul Font) 지정함.</p>
+    <p class="ff2">알라딘 서체 (aladin font) 지정했음.<br>This Font-family only applied in case english</p>
+    <p class="ari"></p>
 </body>
 
 </html>

@@ -8,12 +8,37 @@
     <style>
         /* 글꼴 이름에 공백이 있을 경우 ''으로 묶는다. */
         /* .ff의 글꼴을  'Courier New', Courier, monospace로 지정해 보세요.*/
+
+        /* 글꼴 지정 시에 2~3개 정도 그룹으로 지정한다. */
+
+        /* 5가지 글꼴 모음
+            1. serif: 가장자리 작은 획 있음. 형식과 우아함 표현
+                예) Times New Roman, Georgia, Garamond
+            2. sans-serif: 획 없이 깨끗함. 현대적, 최소한의 모양
+                예) Arial, Verdana, Helvetica
+            3. monospace: 고정 너비, 기계적 모습
+                예) Courier New, Lucida Console, Monaco
+            4. cursive: 필기체
+                예) Brush Script MT, Lucida Handwriting
+            5. fantasy: 장식용
+                예) Copperplate, Papyrus */
         
+        .ff {
+            font-family: 'Courier New', Courier, monospace            
+        }
+        .size {
+            font-size: 100px;
+        }
+
+/* 
+ font: 굵기 기울임 크기/줄간격 글꼴;
+*/
     </style>
 </head>
 <body>
     <h1>글꼴 종류</h1>
     <p>serif, sans-serif, monospace, cursive, fantasy의 다섯 가지 일반 글꼴 모음이 있다.</p>
-    <p class="ff">serif, sans-serif, monospace, cursive, fantasy의 다섯 가지 일반 글꼴 모음이 있다.</p>
+    <p class="ff">serif, sans-serif, monospace, cursive, fantasy의 다섯 가지 일반 글꼴 모음이 있다. <br> 기본은 San-Serif <br> 대부분은 英語에 특화되어 있지만 cursive는 한글이 보기 좋음 (漢字는?...아무 효과 없음)</p>
+    <p class="size">크기 바꿔보셩 <br>changing font</p>
 </body>
 </html>

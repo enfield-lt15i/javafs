@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,38 @@
     <title>HTML+CSS</title>
     <style>
         /* .tdn에 텍스트 장식을 제거해 보세요. */
-
+        .tdn {
+            text-decoration: underline wavy;
+        }
 
         /* .tdu에 텍스트 밑줄을 지정해 보세요. */
-
+        .tdu {
+            text-decoration: overline;
+            text-decoration-thickness: 5px;
+            text-decoration-color: red;
+            text-decoration-style: dashed;
+            text-underline-offset: 10px;
+            text-underline-position: 10px;
+        }
 
         /* .tdo에 텍스트 윗줄을 지정해 보세요. */
 
 
         /* .tdl에 텍스트 취소선을 지정해 보세요. */
 
-        
+        /* text-decoration-line (none)
+            값: none, underline, overline, line-through */
+        /* text-decoration-thickness (auto)
+            값: auto, px(em, rem), %  */
+        /* text-decoration-style (solid)
+            값: solid, dotted, dashed, double, wavy */
+        /* text-decoration-color (현재색) */
+
+        /* 속기형: text-decoration: line thickness style color */
+
     </style>
 </head>
+
 <body>
     <h1>텍스트 장식(꾸밈)</h1>
     <p class="tdn">text-decoration: none;</p>
@@ -30,5 +50,16 @@
     <a href="#" class="tdo">text-decoration: overline;</a>
     <p class="tdl">text-decoration: underline;</p>
     <a href="#" class="tdl">text-decoration: line-through;</a>
+    <br><hr>
+    <p class="ticket">
+        I don't know why she riding so high <br>
+        she ought to think twice <br>
+        she ought to do right by me <br>
+        before she gets to saying goodbye <br>
+        she ought to think twice <br>
+        she ought to do right by me <br>
+    </p>
+    
 </body>
+
 </html>
